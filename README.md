@@ -1,36 +1,49 @@
-# Trabalho3 - Sistema de Gerenciamento de Franquias 
-
-## 👥 Desenvolvido por:
-- Sara Ingrid Sousa Oliveira Afonso — 202365056A  
-- Angelica Mendes Coutinho — 202365064A  
+<h1 align="center">Franchise Management System</h1>
+<p align="center">Java desktop application for franchise operations and business performance</p>
+<p align="center"><img src="https://skillicons.dev/icons?i=java,maven" alt="Technology stack" /></p>
 
 ---
 
-## 💡 Descrição Geral do Projeto
+## Overview
 
-Este trabalho consiste na implementação de um sistema de gerenciamento de franquias utilizando os principais conceitos de programação orientada a objetos com a linguagem Java. O sistema permite o gerenciamento de unidades franqueadas por três tipos de usuários: **Dono**, **Gerente** e **Vendedor**, cada um com permissões e funcionalidades distintas.
+An academic project for Object-Oriented Programming (DCC025) at UFJF. It models franchise operations with three user roles, financial indicators and structured business rules.
 
-O sistema explora fortemente os conceitos de **herança**, **polimorfismo**, **interfaces**, **tratamento de exceções**, **coleções**, **leitura e escrita em arquivos**, **interface gráfica (GUI)** e **testes de unidade**.
+## Features
 
----
+| Role | Responsibilities |
+| --- | --- |
+| Owner | Manage franchises and managers; review revenue, order counts, average order value and sales rankings. |
+| Manager | Manage sales staff, orders and products; monitor inventory and unit performance. |
+| Salesperson | Create and view personal orders; request changes or deletions subject to manager approval. |
 
-## 🧠 Funcionalidades
+## Technical highlights
 
-### 👑 Dono
-- Cadastro, remoção e listagem de **Franquias**
-- Cadastro e remoção de **Gerentes**
-- Consulta de indicadores financeiros por franquia (faturamento, número de pedidos, ticket médio)
-- Ranking de **Vendedores** por desempenho
+- Object-oriented design: inheritance, polymorphism and interfaces.
+- Java desktop graphical interface, collections and exception handling.
+- File-based persistence and JUnit 5 test dependencies.
+- Maven build configuration targeting Java 21.
 
-### 🧑‍💼 Gerente
-- Cadastro, edição e remoção de **Vendedores**
-- Visualização e edição de **Pedidos** de todos os vendedores
-- Gerenciamento de **Produtos** (cadastro, edição, remoção, alerta de estoque baixo)
-- Relatórios de desempenho da unidade e fidelidade dos clientes
+## Getting started
 
-### 🧑‍🦱 Vendedor
-- Cadastro de **Pedidos**
-- Visualização dos próprios pedidos
-- Solicitação de edição ou exclusão de pedidos (necessita aprovação do Gerente)
+Requires JDK 21 and Maven.
 
----
+```bash
+cd mavenproject1
+mvn test
+mvn compile exec:java
+```
+
+Use sample data only. Existing serialized data files should be backed up before running or modifying the application.
+
+## Structure
+
+- `mavenproject1/src/`: source code and project resources.
+- `mavenproject1/pom.xml`: dependencies, build and test configuration.
+- `mavenproject1/*.dat`: file-based application data.
+
+## Authors
+
+- Sara Ingrid Sousa Oliveira Afonso
+- Angelica Mendes Coutinho
+
+Academic project — UFJF. Execution and test results have not been independently verified in this documentation update.
